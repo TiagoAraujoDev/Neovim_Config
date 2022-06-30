@@ -25,6 +25,13 @@ local on_attach = function(client, bufnr)
   vim.keymap.set('n', '<space>m', vim.lsp.buf.formatting, bufopts)
 end
 
+-- DiagnosticSign 
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 --Enable (broadcasting) snippet capability for completion
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true

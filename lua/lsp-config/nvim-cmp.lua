@@ -81,6 +81,9 @@ cmp.setup {
     { name = 'path' },
     { name = 'buffer' },
   },
+  window = {
+    documentation = cmp.config.window.bordered(),
+  },
   formatting = {
     format = function(entry, vim_item)
       -- Kind icons
