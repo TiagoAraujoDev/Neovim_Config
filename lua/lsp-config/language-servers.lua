@@ -57,3 +57,6 @@ require'lspconfig'.emmet_ls.setup{
   capabilities = capabilities,
 }
 require'lspconfig'.clangd.setup{}
+require'lspconfig'.jsonls.setup{
+  capabilities = capabilities,
+}
