@@ -56,3 +56,4 @@ require'lspconfig'.html.setup {
 require'lspconfig'.emmet_ls.setup{
   capabilities = capabilities,
 }
+require'lspconfig'.clangd.setup{}
