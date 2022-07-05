@@ -8,6 +8,8 @@ local sources = {
   diagnostics.eslint_d,
   code_actions.eslint_d,
   formatting.stylua,
+  formatting.clang_format,
+  formatting.json_tool,
 }
 
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})

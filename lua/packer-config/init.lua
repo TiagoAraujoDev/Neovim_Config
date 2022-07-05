@@ -32,6 +32,10 @@ return require("packer").startup(function(use)
 	use("JoosepAlviste/nvim-ts-context-commentstring")
   use('theHamsta/nvim-treesitter-pairs')
 
+  -- DAP
+  use("mfussenegger/nvim-dap")
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+
   -- null-ls
   use("jose-elias-alvarez/null-ls.nvim")
 
